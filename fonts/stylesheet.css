@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Lora';
-    src: url('../fonts/2') format('woff2'),
-        url('../fonts/') format('woff');
+    src: url('Lora-Regular.woff2') format('woff2'),
+        url('Lora-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'Oxygen';
-    src: url('../fonts/Oxygen-Regular.woff2') format('woff2'),
-        url('../fonts/Oxygen-Regular.woff') format('woff');
+    src: url('Oxygen-Regular.woff2') format('woff2'),
+        url('Oxygen-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
