@@ -1,0 +1,101 @@
+.site-main-list {
+    @include un-style;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 108px;
+}
+.site-main-list__item {
+    margin-right: 24px;
+    background-color: #fff;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.09);
+    border-radius: 3px;
+    &:nth-of-type(1){
+        margin-bottom: 25px;
+    }
+    &:nth-of-type(2){
+        margin-bottom: 25px;
+    }
+    &:nth-of-type(3){
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+    &:nth-of-type(6){
+        margin-right: 0;
+    }
+}
+.site-main-list__item-head {
+    margin-top: 4px;
+    margin-bottom: 6px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #101315;
+}
+.site-main-list__item-page {
+    min-height: 38px;
+    width: 100%;    
+    max-width: 247px;
+    margin: 0;
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    color: $color-page;
+}
+.site-main-list__item-section {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px;
+    background-color: #FCFCFC;
+    color: #999999;
+}
+.site-main-list__item-section-head {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 35px;
+    &::before{
+        margin-right: 10px;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 26px;
+        height: 26px;
+        background-image: url(../../img/Willson.png);
+        content: "";
+    }
+    &--img::before{
+        margin-right: 10px;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 26px;
+        height: 26px;
+        background-image: url(../../img/mat.png);
+        content: "";
+        
+    }
+}
+
+.site-main-list__item-section-page {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 35px;
+}
+@include media{
+    .site-main-list{
+        margin: 0 auto;
+    }
+    .site-main-list__item{
+        margin-right: 0;
+        &:not(:last-child){
+            margin-bottom: 24px;
+        }
+    }
+}

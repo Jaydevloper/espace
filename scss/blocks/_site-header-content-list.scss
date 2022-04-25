@@ -1,0 +1,27 @@
+.site-header-content-list {
+    @include un-style;
+    justify-content: center;
+    padding-left: 296px;
+
+}
+.site-header-content-list__item {
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    &:not(:last-child){
+        margin-right: 91px;
+    }
+}
+@include media{
+    .site-header-content-list{
+        flex-direction: column;
+        padding-left: 0;
+    }
+    .site-header-content-list__item{
+        &:not(:last-child){
+            margin-right: 0;
+            margin-bottom: 5px;
+        }
+    }
+}

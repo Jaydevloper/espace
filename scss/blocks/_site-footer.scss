@@ -1,0 +1,24 @@
+.site-footer {
+    margin: 0 auto;
+    width: 100%;
+    background-image: url(../../img/footer-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #857d7d;
+    max-width: 1440px;
+}
+@include retina{
+    .site-footer{
+        background-image: url(../../img/footer-bg@2x.jpg);
+    }
+}
+.site-footer__content{
+    width: 100%;
+    max-width: 1440px;
+    background-color: rgba(35, 47, 56, 0.6);
+}
+.site-footer__content-wrraper{
+    display: flex;
+    justify-content: space-between;
+}

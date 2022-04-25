@@ -1,0 +1,25 @@
+.site-footer-wrraper{
+    padding-top: 81px;
+    padding-bottom: 89px;
+}
+.site-footer-wrraper__head{
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    color: #EFEFEF;
+    &::after{
+        margin: 0 auto;
+        margin-top: 16px;
+        width: 100%;
+        max-width: 181px;
+        display: block;
+        border-bottom: 2px solid #DEDEDE;
+        content: "";
+    }
+}
+@include media{
+    .site-footer-wrraper{
+        margin: 0 auto;
+    }
+}

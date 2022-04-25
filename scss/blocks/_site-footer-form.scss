@@ -1,0 +1,28 @@
+.site-footer-form {
+    text-align: center;
+}
+.site-footer-form__input{
+    padding: 20px 208px 20px 35px;
+    border: none;
+    &::placeholder{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: #817F83;;
+    }
+}
+.site-footer-form__button {
+    margin-left: -3px;
+    padding: 18px 43px 18px 44px;
+    border-radius: 0px 3px 3px 0px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.28);
+    color:#F8F8F8;
+}
+@include media{
+    .site-footer-form__input{
+        margin-bottom: 27px;
+        padding-right: 21px;
+        text-align: center;
+    }
+}

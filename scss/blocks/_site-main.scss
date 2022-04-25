@@ -1,0 +1,22 @@
+.site-main {
+    padding: 0;
+    padding-top: 60px;
+}
+
+.site-main__head {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    letter-spacing: 2px;
+    &::after{
+        margin: 0 auto;
+        margin-top: 16px;
+        width: 100%;
+        max-width: 181px;
+        display: block;
+        border-bottom: 2px solid #969191;
+        content: "";
+    }
+
+}   

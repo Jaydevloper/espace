@@ -1,0 +1,92 @@
+.site-header{
+    padding-left: 250px;
+    padding-right: 270px;
+    padding-bottom: 157px;
+    margin: 0 auto;
+    width: 100%;
+    background-image: url(../../img/bg-fon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: $color-page;
+    border-radius: 3px;
+    max-width: 1440px;
+}
+
+.site-header__wrraper{
+    display: flex;
+    justify-content: space-between;
+}
+.site-header__content {
+    text-align: center;
+    color: $color-page-white;
+}
+.site-header__content-head {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 51px;
+}
+.site-header__content-page {
+    color: rgba(255, 255, 255, 0.63);
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+}
+.site-header__content-link {
+    margin: 0 auto;
+    padding: 12px 31px 12px 31px;
+    text-decoration: none;
+    width: 167px;
+    display: block;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    color: $color-page-white;
+    background-color: #DD783F;
+    border-radius: 3px;
+    
+}
+.site-header__button-click{
+    display: none;
+}
+
+@include media{
+    .site-header{
+        position: relative;
+        z-index: 1;
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+        max-width: 400px;
+    }
+    .site-header__wrraper{
+        flex-direction: column;
+    }
+    .site-header__wrraper-left{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .site-header__content-head{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        display: block;
+        text-align: center;
+        max-width: 157px;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 32px;
+    }
+    .site-header__content-page{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: 156px; 
+    }
+    .site-header__button-click{
+        display: block;
+        background-color: #fff;
+    }
+   
+}

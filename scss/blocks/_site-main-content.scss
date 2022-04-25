@@ -1,0 +1,139 @@
+.site-main-content{
+    padding-bottom: 67px;
+    display: flex;
+    justify-content: center;
+}
+.site-main-content__left{
+    margin-right: 20px;
+    padding-top: 156px;
+    padding-bottom: 15px;
+    padding-right: 124px;
+    padding-left: 24px;
+    background-image: url(../../img/Roadbg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #80696f;
+    border-radius: 3px;
+}
+.site-main-content__left-head{
+    margin-bottom: 6px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 30px;
+}
+.site-main-content__left-page{
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.7);
+}
+.site-main-content__left-section{
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.7);
+}
+.site-main-content__left-section-head{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 35px;
+    &::before{
+        margin-right: 10px;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 26px;
+        height: 26px;
+        background-image: url(../../img/mat.png);
+        content: "";
+    }
+}
+@include retina{
+    .site-main-content__left-section-head{
+        &::before{
+            background-image: url(../../img/mat@2x.png);
+        }
+    }
+    .site-main-content__right-section-head{
+        &::before{
+            background-image: url(../../img/Willson@2x.png);
+        }
+    }
+}
+.site-main-content__left-section-page{
+    margin: 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 35px;
+}
+.site-main-content__right{
+    position: relative;
+    z-index: 1;
+    padding-top: 156px;
+    padding-bottom: 15px;
+    padding-right: 124px;
+    padding-left: 24px;
+    background-image: url(../../img/Topbg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #80696f;
+    border-radius: 3px;
+}
+@include retina{
+    .site-main-content__right{
+        background-image: url(../../img/Topbg@2x.png);
+    }
+}
+.site-main-content__right-link {
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    text-decoration: none;
+    padding: 6px 9px 7px 9px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 13px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    background-color:  #DD783F;
+    color: #fff;
+}
+
+.site-main-content__right-section-head{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 35px;
+    &::before{
+        margin-right: 10px;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 26px;
+        height: 26px;
+        background-image: url(../../img/Willson.png);
+        content: "";
+    }
+
+}
+@include media{
+    .site-main-content{
+        flex-direction: column;
+    }
+    .site-main-content__left{
+        margin-right: 0;
+        margin-bottom: 24px;
+    }
+}
